@@ -1,0 +1,62 @@
+<template>
+	<view>
+		<view class="box">
+		  <input class="name" value='{nickname}' bindinput='getnickname'></input>
+		</view>
+		<view class="box">
+		  <input class="name" value='{address}' bindinput='getaddress'></input>
+		</view>
+		<button class="btn1" bindtap='save'>保存</button>
+		<button class="btn2" bindtap='delete'>删除钱包地址</button>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				
+			}
+		},
+		methods: {
+			
+		}
+	}
+</script>
+
+<style>
+.box{
+  width:100%;
+  height:186rpx;
+  margin-left:48rpx;
+  border-bottom:1px solid #ccc;
+  padding-top:130rpx;
+  box-sizing: border-box;
+}
+.name{
+  /* margin-left:48rpx; */
+  font-size: 30rpx;
+}
+.btn1{
+width: 600rpx;
+height: 80rpx;
+margin-top:140rpx;
+border-radius: 5px;
+background-color:#30bcd5;
+color: rgba(255, 255, 255, 1);
+font-size: 32rpx;
+text-align: center;
+font-family: Microsoft Yahei;
+}
+.btn2{
+width: 600rpx;
+height: 80rpx;
+margin-top:50rpx;
+border-radius: 5px;
+background:#e51c23;
+color: rgba(255, 255, 255, 1);
+font-size: 32rpx;
+text-align: center;
+font-family: Microsoft Yahei;
+}
+</style>

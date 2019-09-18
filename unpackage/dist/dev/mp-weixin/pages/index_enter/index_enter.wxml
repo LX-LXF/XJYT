@@ -1,0 +1,1 @@
+<view><view class="enter"><view class="enter-1">转入地址如下</view><view><image class="img" src="../../static/images/address.jpg"></image><text class="enter-2">地址：</text><input class="weui-input1" placeholder="转入地址" value="{account}" focus="true" name="account"/><text class="enter-3">复制</text></view></view></view>

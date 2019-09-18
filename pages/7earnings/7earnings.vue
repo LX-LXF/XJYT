@@ -1,0 +1,198 @@
+<template>
+	<view>
+		<view class="charts">
+		       <ff-canvas id="pieSelect" canvas-id="pieSelect" opts="{ opts }"> </ff-canvas>
+		</view>
+		<view class="divLine"></view>
+		<view class="income" catchtouchmove='false'>
+		 <view style='height:200rpx;padding-left: 48rpx;'>
+		  <view class="side">
+		    <view class="txt">过去7日收益</view>
+		    <view class="num">{{seven_profit}}<text space='true' class='fontStyle'> FIL</text></view>
+		  </view>
+		  <view class="side2">
+		    <view class="txt">总计</view>
+		    <view class="num">{{total_profit}}<text space='true' class='fontStyle'> FIL</text></view>
+		  </view>
+		 </view>
+		 <view class="divLine"></view>
+		 <view class="notes">
+		   <text class="top">收益记录</text>
+		 </view>
+		</view>
+		
+		<scroll-view scroll-y='true' class="notes">
+		  <!-- <view class="none">暂无收益记录</view> -->
+		  <view class="none1" wx:for="{seven_list}" wx:key='id' wx:for-item="item" >
+		    <view class="time">{{item[0].time[0]}}月{{item[0].time[1]}}日</view>
+		    <view class="list">
+		      <image class="pic" src="../../static/images/income.png"></image>
+		      <view class="desc">
+		        <view class="info">{{item[0].pool=="117.48.133.73"?"太仓机房":''}}</view>
+		        <view class="info">{{item.length-1}}台矿机</view>
+		      </view>
+                <view class="add">+{{item[item.length-1]}}FIL</view>
+                </view>
+
+            </view>
+		  </scroll-view>
+	</view>
+</template>
+<!-- //7日收益 -->
+<script>
+	export default {
+		data() {
+			return {
+				
+			}
+		},
+		methods: {
+			
+		}
+	}
+</script>
+
+<style>
+page {
+  background: #f2f2f2;
+}
+
+.charts {
+  width: 100%;
+  height: 400rpx;
+  background: #fff;
+}
+
+.income {
+  width: 100%;
+  height: 350rpx;
+  background: #fff;
+  /* margin-top: 10rpx; */
+}
+.topFix{
+  position: fixed;
+  background: #fff;
+  top:100rpx;
+  width: 100%;
+  z-index: 1;
+}
+.divLine{
+ background: #E0E3DA;
+ width: 100%;
+ height: 5rpx;
+}
+.fontStyle{
+  font-size: 25rpx;
+}
+
+.side {
+  width: 45%;
+  float: left;
+}
+.side2 {
+  width: 55%;
+  float: left;
+}
+
+.txt {
+  height: 100rpx;
+  /* text-align: center; */
+  
+  line-height: 150rpx;
+  color: #313131;
+  font-size: 30rpx;
+  
+}
+
+.num {
+  height: 100rpx;
+  /* text-align: center; */
+  
+  line-height: 100rpx;
+  color: #333;
+  font-size: 38rpx;
+}
+
+.notes {
+  width: 100%;
+  height:100%;
+  background: #fff;
+  /* margin-top: 10rpx; */
+  padding-bottom:50rpx;
+  padding-left: 48rpx;
+  box-sizing: border-box;
+}
+
+.top {
+  font-size: 32rpx;
+  color: #333;
+  line-height: 100rpx;
+}
+
+
+.none {
+  width: 100%;
+  height: 350rpx;
+  text-align: center;
+  line-height: 300rpx;
+  font-size: 50rpx;
+  color: #ccc;
+}
+
+.none1 {
+  width: 100%;
+  margin-bottom: 30rpx;
+}
+.time{
+  width:650rpx;
+  float: right;
+  margin-right:48rpx;
+  height:50rpx;
+  color:#333;
+  font-size: 30rpx;
+  border-bottom: 1px solid #efefef;
+}
+
+.list {
+  width: 100%;
+  height: 160rpx;
+  margin-bottom: 20rpx;
+}
+
+.pic {
+  width: 60rpx;
+  height: 60rpx;
+  float: left;
+  margin-top: 10rpx;
+}
+
+.desc {
+  float: left;
+  width: 300rpx;
+  height: 100%;
+  padding-left: 20rpx;
+}
+
+.info {
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 26rpx;
+  color: #000;
+  text-align: left;
+}
+
+.add {
+  float: right;
+  line-height: 80rpx;
+  color: #13C1DB;
+  font-size: 32rpx;
+  margin-right:48rpx;
+}
+.line{
+  width:600rpx;
+  float: right;
+  margin-right:48rpx;
+  height:10rpx;
+  border-bottom: 2rpx solid #efefef;
+}
+</style>

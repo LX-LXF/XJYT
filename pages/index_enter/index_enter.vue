@@ -1,0 +1,103 @@
+<template>
+	<view>
+		<view class='enter'>
+		  <view class='enter-1'>转入地址如下</view>
+		  <view>
+		  <image class='img' src='../../static/images/address.jpg'></image>
+		  <text class='enter-2'>地址：</text>
+		   <input class="weui-input1" placeholder="转入地址"  value="{account}" focus="true" name="account"/>
+		   <text class='enter-3'>复制</text>
+		  </view>
+		</view>
+	</view>
+</template>
+<!-- 转入 -->
+<script>
+	export default {
+		data() {
+			return {
+				
+			}
+		},
+		methods: {
+			
+		}
+	}
+</script>
+
+<style>
+page{
+  background: #f2f2f2;
+}
+.enter{
+  margin: 30rpx 0 ;
+
+  background: #fff;
+
+  overflow: hidden;
+}
+.enter-1{
+  margin-left: 30rpx;
+
+  padding-top: 30rpx;
+
+  font-size: 32rpx;
+
+}
+.img{
+  
+  display:block;
+
+  width: 30rpx;
+
+  height: 30rpx;
+
+  margin-left: 30rpx;
+
+  padding-top: 30rpx;
+
+  margin-top:30rpx;
+}
+.enter-2{
+  display:block;
+
+  float: left;
+
+  margin-left: 75rpx;
+
+  font-size: 32rpx;
+
+  margin-top: -36rpx;
+
+
+}
+.weui-input1{
+
+  ime-mode:disabled;
+
+  font-size: 30rpx; 
+
+  display:block;
+
+  float:left;
+
+  margin-top: -38rpx;
+
+  margin-bottom: 30rpx;
+
+  /* margin-left: 110rpx; */
+}
+.enter-3{
+  float: right;
+
+  display:block;
+
+  font-size: 30rpx;
+
+  color: red;
+
+   margin-top: -30rpx;
+   
+   margin-right: 75rpx;
+}
+</style>

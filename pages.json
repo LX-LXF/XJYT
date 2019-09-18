@@ -1,0 +1,106 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		}
+        ,{
+            "path" : "pages/balance/balance",
+            "style" : {"navigationBarTitleText": "我的余额"}
+        }
+        ,{
+            "path" : "pages/my-mill/my-mill",
+            "style" : {"navigationBarTitleText": "我的矿机"}
+        }
+        ,{
+            "path" : "pages/mill-deal/mill-deal",
+            "style" : {"navigationBarTitleText": "矿机交易"}
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" : {"navigationBarTitleText": "登录页"}
+        }
+        ,{
+            "path" : "pages/loading/loading",
+            "style" : {"navigationBarTitleText": "加载登录页"}
+        }
+        ,{
+            "path" : "pages/7earnings/7earnings",
+            "style" : {"navigationBarTitleText": "7日收益页"}
+        }
+        ,{
+            "path" : "pages/earnings/earnings",
+            "style" : {"navigationBarTitleText": "全部收益页"}
+        }
+        ,{
+            "path" : "pages/customerservice/customerservice",
+            "style" : {"navigationBarTitleText": "客户服务页"}
+        }
+        ,{
+            "path" : "pages/index_enter/index_enter",
+            "style" : {"navigationBarTitleText": "转入"}
+        }
+        ,{
+            "path" : "pages/withdraw/withdraw",
+            "style" : {"navigationBarTitleText": "转出"}
+        }
+    ],
+    "subPackages": [{
+            "root": "child_pages",
+            "pages": [
+                {
+                    "path" : "set/set",
+                    "style" : {"navigationBarTitleText": "设置页面"}
+                }
+                ,{
+                    "path" : "the-personal/the-personal",
+                    "style" : {"navigationBarTitleText": "个人资料"}
+                }
+                ,{
+                    "path" : "my-wallet/my-wallet",
+                    "style" : {"navigationBarTitleText": "我的余额"}
+                }
+                ,{
+                    "path" : "authentication/authentication",
+                    "style" : {"navigationBarTitleText": "身份认证"}
+                }
+                ,{
+                    "path" : "security/security",
+                    "style" : {"navigationBarTitleText": "安全认证"}
+                }
+                
+                ,{
+                    "path" : "set-password-money/set-password-money",
+                    "style" : {"navigationBarTitleText": "设置资金密码"}
+                }
+                ,{
+                    "path" : "password/password",
+                    "style" : {"navigationBarTitleText": "修改资金密码"}
+                }
+                ,{
+                    "path" : "binding/binding",
+                    "style" : {"navigationBarTitleText": "解除安全绑定"}
+                },
+                {
+                    "path" : "add_wattle/add_wattle",
+                    "style" : {"navigationBarTitleText": "新增钱包地址"}
+                },
+                {
+                    "path" : "edit_wattle/edit_wattle",
+                    "style" : {"navigationBarTitleText": "编辑钱包地址"}
+                },
+                {
+                    "path" : "email/email",
+                    "style" : {"navigationBarTitleText": "邮箱认证"}
+                }
+            ]
+          }],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}

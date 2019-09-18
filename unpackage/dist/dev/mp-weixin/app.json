@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/balance/balance",
+    "pages/my-mill/my-mill",
+    "pages/mill-deal/mill-deal",
+    "pages/login/login",
+    "pages/loading/loading",
+    "pages/7earnings/7earnings",
+    "pages/earnings/earnings",
+    "pages/customerservice/customerservice",
+    "pages/index_enter/index_enter",
+    "pages/withdraw/withdraw"
+  ],
+  "subPackages": [
+    {
+      "root": "child_pages",
+      "pages": [
+        "set/set",
+        "the-personal/the-personal",
+        "my-wallet/my-wallet",
+        "authentication/authentication",
+        "security/security",
+        "set-password-money/set-password-money",
+        "password/password",
+        "binding/binding",
+        "add_wattle/add_wattle",
+        "edit_wattle/edit_wattle",
+        "email/email"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {}
+}

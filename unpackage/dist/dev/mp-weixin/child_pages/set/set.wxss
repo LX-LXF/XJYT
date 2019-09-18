@@ -1,0 +1,262 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* miniprogram/pages/index9/index9.wxss */
+page{
+  /* background: #dfdfdf; */
+}
+.top{
+  height: 100%;
+
+  background: #fff;
+}
+.sub{
+  background:#fff;
+
+  margin-top: 40rpx;
+}
+.sub-title{
+  /* font-weight:bold; */
+
+  background: #fff;
+
+  display: block;
+
+  -webkit-box-align: left;
+
+  -webkit-align-items: left;
+
+      -ms-flex-align: left;
+
+          align-items: left;
+
+  padding-left: 45rpx;
+
+  font-size:32rpx;
+
+  margin-top: 40rpx;
+
+  margin-bottom: 30rpx;
+}
+.line1{
+  width: 100%;
+
+  height: 5rpx;
+
+  background-color: #f2f2f2;
+}
+.tu{
+  display: block;
+
+  float: right;
+
+  margin-top: -64rpx;
+
+  width:18rpx;
+
+  height:24rpx;
+
+  margin-right:50rpx;
+}
+.line1-te{
+  width: 100%;
+
+  height: 80rpx;
+
+  background-color: #f2f2f2;
+}
+.tu1{
+  float: left;
+
+  width: 50rpx;
+
+  height: 50rpx;
+
+  margin-left: 45rpx;
+
+  padding-right: 45rpx;
+}
+.changeBtn{
+  background: #74d8e7;
+
+  color: #fff;
+
+      width: 100%;
+
+      height: 100rpx;
+
+    position: fixed;
+
+    text-align:center;
+
+    bottom: 0rpx;
+
+    line-height:100rpx;
+}
+.sub-te{
+  float: left;
+
+  width: 110rpx;
+
+  height:36rpx;
+
+  font-size: 26rpx;
+
+  margin-left: 530rpx;
+
+  background: #ead637;
+
+  color: #fff;
+
+  margin-top: -72rpx;
+
+  text-align: center;
+}
+.sub-te1{
+  float: left;
+
+  width: 110rpx;
+
+  height:36rpx;
+
+  font-size: 26rpx;
+
+  margin-left: 530rpx;
+
+  background: #ead637;
+
+  color: #fff;
+
+  margin-top: -72rpx;
+
+  text-align: center;
+}
+.zan-dialog__mask {
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  right: 0;
+  
+  bottom: 0;
+
+  z-index: 10;
+
+  background: rgba(0, 0, 0, 0);
+
+  display: none;
+}
+.zan-dialog__container {
+  position: fixed;
+
+  bottom: 400rpx;
+
+  width: 650rpx;
+
+  height: 350rpx;
+
+  margin-left: 50rpx;
+
+  background: #f8f8f8;
+
+  -webkit-transform: translateY(300%);
+
+      -ms-transform: translateY(300%);
+
+          transform: translateY(300%);
+
+  -webkit-transition: all 0.4s ease;
+
+  -o-transition: all 0.4s ease;
+
+  transition: all 0.4s ease;
+
+  z-index: 12;
+  
+  border-radius: 20rpx;
+
+  -webkit-box-shadow: 0px 3px 3px 2px gainsboro;
+
+          box-shadow: 0px 3px 3px 2px gainsboro;
+}
+.zan-dialog--show .zan-dialog__container {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+.zan-dialog--show .zan-dialog__mask {
+  display: block;
+}
+

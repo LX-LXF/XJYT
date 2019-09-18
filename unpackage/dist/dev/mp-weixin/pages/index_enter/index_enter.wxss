@@ -1,0 +1,73 @@
+
+page{
+  background: #f2f2f2;
+}
+.enter{
+  margin: 30rpx 0 ;
+
+  background: #fff;
+
+  overflow: hidden;
+}
+.enter-1{
+  margin-left: 30rpx;
+
+  padding-top: 30rpx;
+
+  font-size: 32rpx;
+}
+.img{
+  
+  display:block;
+
+  width: 30rpx;
+
+  height: 30rpx;
+
+  margin-left: 30rpx;
+
+  padding-top: 30rpx;
+
+  margin-top:30rpx;
+}
+.enter-2{
+  display:block;
+
+  float: left;
+
+  margin-left: 75rpx;
+
+  font-size: 32rpx;
+
+  margin-top: -36rpx;
+}
+.weui-input1{
+
+  ime-mode:disabled;
+
+  font-size: 30rpx; 
+
+  display:block;
+
+  float:left;
+
+  margin-top: -38rpx;
+
+  margin-bottom: 30rpx;
+
+  /* margin-left: 110rpx; */
+}
+.enter-3{
+  float: right;
+
+  display:block;
+
+  font-size: 30rpx;
+
+  color: red;
+
+   margin-top: -30rpx;
+   
+   margin-right: 75rpx;
+}
+
